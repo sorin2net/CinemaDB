@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="tema2" id="55090A9F-40E5-9016-E67E-6AE24C8F65AC" version="3.5">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 11:35:37 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>55090A9F-40E5-9016-E67E-6AE24C8F65AC</designId>
+</OSDM_Design>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5CF7AE8B-C999-8965-95F4-AD6C9894FB3C" containerWithKeyObject="76F17A93-B7D9-115D-3503-75FFC5FF981E" localFKIndex="C9DE9C4F-1759-B522-2F87-DFB31CFAB286" name="Rezervare_Proiectie_FK">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>54573829-AAC7-4B04-1AB1-99B26BCA140A</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<referredTableLongName>Proiectie</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E6E7D25A-E887-83B8-7C24-926CF7EE7AA1</referredTableID>
+<keyObject>3D2F104A-85C3-23CA-4015-429B8C60602B</keyObject>
+<referredKeyID>3D2F104A-85C3-23CA-4015-429B8C60602B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_proiectie</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

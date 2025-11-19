@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="76717A2A-A098-F09B-A56B-97E57C218EA0" name="Proiectie">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:24:24 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_proiectie" id="A30C1C9A-82DF-E72D-A029-9B7BA195406C">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:24:49 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data" id="4A380B8D-64B0-2560-094C-DB826BAD5BF9">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:25:46 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tip_proiectie" id="A2E767DF-2184-682E-597B-A7692782DE01">
+<createdBy>Denis</createdBy>
+<createdTime>2025-11-17 21:26:29 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<constraintName>tip_proiectie_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<listOfValues>
+<valueDef value="2D" description=""/>
+<valueDef value="3D" description=""/>
+<valueDef value="4DX" description=""/>
+<valueDef value="IMAX" description=""/>
+</listOfValues>
+<defaultValue>3D</defaultValue>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ora_inceput" id="9C29E920-E47D-2DBB-3401-F15031055A4C">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:28:41 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<constraintName>ora_inceput_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<listOfValues>
+<valueDef value="10:00" description=""/>
+<valueDef value="11:00" description=""/>
+<valueDef value="12:00" description=""/>
+<valueDef value="13:00" description=""/>
+<valueDef value="14:00" description=""/>
+<valueDef value="15:00" description=""/>
+<valueDef value="16:00" description=""/>
+<valueDef value="17:00" description=""/>
+<valueDef value="18:00" description=""/>
+<valueDef value="19:00" description=""/>
+<valueDef value="20:00" description=""/>
+<valueDef value="21:00" description=""/>
+<valueDef value="8:00" description=""/>
+<valueDef value="9:00" description=""/>
+</listOfValues>
+<defaultValue>12:00</defaultValue>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ora_sfarsit" id="86FCDA1A-B00A-7A94-B113-19CF84C4F90E">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:28:58 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<constraintName>ora_sfarsit_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<listOfValues>
+<valueDef value="10:00" description=""/>
+<valueDef value="11:00" description=""/>
+<valueDef value="12:00" description=""/>
+<valueDef value="13:00" description=""/>
+<valueDef value="14:00" description=""/>
+<valueDef value="15:00" description=""/>
+<valueDef value="16:00" description=""/>
+<valueDef value="17:00" description=""/>
+<valueDef value="18:00" description=""/>
+<valueDef value="19:00" description=""/>
+<valueDef value="20:00" description=""/>
+<valueDef value="21:00" description=""/>
+<valueDef value="22:00" description=""/>
+<valueDef value="23:00" description=""/>
+<valueDef value="9:00" description=""/>
+</listOfValues>
+<defaultValue>14:00</defaultValue>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_film" id="1B236445-4D7A-28E0-CD25-AFD0643CD03E">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-26 15:26:47 UTC</createdTime>
+<generatorID>47922D38-8FF2-F910-059B-7AC7CEFDD6ED</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<referedAttribute>3201A782-1630-BB7C-E723-99D55174AD9B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_sala" id="90DBA198-76FD-F312-8EFD-EC9F654C980B">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:14:32 UTC</createdTime>
+<generatorID>E6515024-E92C-9B56-C09D-BEE75E530358</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<referedAttribute>478CD85A-8527-6656-FD62-9A3E3F44FD49</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="190B8618-7B28-7D00-D461-E3F1B027B85B" name="Key_1">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:25:24 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>A30C1C9A-82DF-E72D-A029-9B7BA195406C</newElementsIDs>
+<usedAttributes>
+<attributeRef>A30C1C9A-82DF-E72D-A029-9B7BA195406C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

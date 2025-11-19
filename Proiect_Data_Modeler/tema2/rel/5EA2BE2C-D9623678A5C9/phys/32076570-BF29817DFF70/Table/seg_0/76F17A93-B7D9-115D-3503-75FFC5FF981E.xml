@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Rezervare" directorySegmentName="seg_0" id="76F17A93-B7D9-115D-3503-75FFC5FF981E">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_rezervare" id="17ECF508-450A-4E1E-7722-ECF5A9BAD377">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="status_rezervare" id="275859D4-59E2-829D-E46A-D11C8005FD39">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<defaultValue>REZERVAT</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="Client_id_client" id="3B353CB3-5E33-188A-61F3-9716A4012498">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="locuri_rezervate" id="77581790-44AF-AED8-EFB7-3F5726FAD81D">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="numar_locuri" id="9259394D-C6CD-AF39-3590-FFE24F56286E">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<defaultValue>1</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="Proiectie_id_proiectie" id="9447C67A-5A54-382B-E361-74CC49716F04">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_rez" id="AC3D486D-78B8-06B4-1CC0-A57EA238A9E7">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Rezervare_Client_FK" id="1D9CDCCC-E9F2-DA28-193A-81EF5A05FA72">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Rezervare_Proiectie_FK" id="C9DE9C4F-1759-B522-2F87-DFB31CFAB286">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Rezervare_PK" id="7B4D9BB3-D474-3D81-E4C3-D07AC2FB4BDE">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

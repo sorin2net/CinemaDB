@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1294F625-A42C-9A99-8604-8BBF57D180D4" name="Sala">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>E243A900-73CA-4DA6-BA86-B1320C824236</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sala" id="42454B20-6781-9616-0032-9B7CAE4EB0FD">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>478CD85A-8527-6656-FD62-9A3E3F44FD49</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Capacitate" id="3B51CCDB-92F4-3904-C629-C5E30D9BB0F5">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>CFA7FBF3-5C51-50E2-B706-D8452641D4B6</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>capacitate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<defaultValue>100</defaultValue>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>50</beginValue>
+<endValue>300</endValue>
+<description>O sala mica pentru un film 2D de exemplu poate avea chiar si 50 de locuri, dar cinema-ul dispune si de sali de 300 de locrui pentru a maximiza profitul filmelor 4DX si IMAX</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="nr_rand" id="F01EBA39-CDDC-B94E-B266-59AE2DBF9DD7">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>455A334A-93D1-490D-9C3F-83E95B6B4824</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>nr_rand_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nr_rand&gt;4"/>
+</checkConstraint>
+<defaultValue>10</defaultValue>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_col" id="20DCA414-14F5-4175-9B27-48A4BBA608C5">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>F0DFAF59-B489-1073-0C95-D20BF79D4BE1</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>nr_col_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nr_col&gt;4"/>
+</checkConstraint>
+<defaultValue>10</defaultValue>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_cinema" id="AE41DB5A-6CCA-C1DF-D16E-86066A039F56">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>92E761A9-61A1-D352-15C1-5E6EDAFF241C</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA112A0F-A19F-54A3-392E-9B6088D85522" referredColumn="95027154-782E-F631-EF1D-DB56AE25AF15"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4751620B-1987-5CA9-0310-4C2353451802" name="Sala_PK">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>DF17BE74-1C77-CACB-9CB7-639032053992</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42454B20-6781-9616-0032-9B7CAE4EB0FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5407565E-3CC2-C6F3-449B-2A0035FCF1D8" name="Sala_Cinema_FK">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>5A6DB533-2E17-A53F-BFC5-D168B319FD77</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE41DB5A-6CCA-C1DF-D16E-86066A039F56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

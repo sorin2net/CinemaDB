@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="verifica_loc_unic" directorySegmentName="seg_0" id="AFEEC618-B824-8EE8-0ED4-1439C0EFB73A">
+<createdBy>Denis</createdBy>
+<createdTime>2025-11-10 10:59:14 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[DECLARE
+    v_count NUMBER;
+BEGIN
+    SELECT COUNT(*)
+    INTO v_count
+    FROM Rezervare r
+    WHERE r.id_proiectie = :NEW.id_proiectie
+      AND r.id_client <> :NEW.id_client
+      AND r.locuri_rezervate = :NEW.locuri_rezervate;
+
+    IF v_count > 0 THEN
+        RAISE_APPLICATION_ERROR(-20004,
+            'Locul ales este deja rezervat de alt client.');
+    END IF;
+END;
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<state>ENABLE</state>
+<table>76F17A93-B7D9-115D-3503-75FFC5FF981E</table>
+</TriggerOraclev10g>

@@ -1,0 +1,207 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="368711DA-A41B-2FEB-01DE-F135C57324F8" name="Profil_Client">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>DC02EDB4-D4F6-19FB-13C0-7B9658AF7366</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_profil" id="461825BB-AB83-34B6-7C7B-1885C5F56D59">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>0124E89F-3FDC-2124-AFBE-6BC7CBD7A99A</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume" id="807B4DE8-7AF5-30D0-7E73-D6882CF1E57E">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>FDF6C82B-E06E-7587-7FE1-58AA16564BD2</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>nume_profil_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume)&gt;2"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume" id="43C50380-DC9E-E0CF-FDAF-6C6900AF554D">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>3D104E36-2598-15FE-8627-C0D66843BEAC</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>prenume_profil_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(prenume)&gt;2"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numar_telefon" id="E9B9B73F-DF3E-AA3B-7C6C-6093384D06C2">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>47FC6AB4-1989-A10F-6671-806CECFB948E</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>nr_tel_profil_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(numar_telefon, &apos;^07[0-9]{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_nasterii" id="21ABA2AA-81E2-81D7-6439-3502743A1F36">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>B742C9DC-2BAE-28FC-FD0D-DBE92AC366EF</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="parola" id="E38A84A3-6657-014E-4258-D59A52E11945">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>61267152-916A-3CDC-DD6E-C38C0A4F9598</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>parola_profil_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(parola)&gt;8"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adresa" id="7443F2BB-1608-1476-8960-2710C2D48401">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>C78CC1A3-AA5A-52BE-9A39-0AA987E1CD49</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>adresa_profil_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(adresa, &apos;^[A-Z][a-zA-ZăâîșțĂÂÎȘȚ]+,\s+[Ss]tr(ada|\.|)\s+[A-Z][a-zA-ZăâîșțĂÂÎȘȚ ]+\s+[0-9]{1,3}[A-Za-z]?$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="EF1466AA-C8DE-4791-E8CE-6897680E8905">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>DC4175B2-6B5C-4AEC-C9E2-141CA9082A1F</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>email_profil_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_client" id="5F94E2D2-67D5-CCC4-A378-9CD0C70C98A5">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>820DC9A6-3527-C2E8-3F29-65687868D8C4</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F991C7EC-8B57-BC3A-7DBB-6D59905FBFB4" referredColumn="180B176E-5034-E6E2-C4A4-9BE8B8987F3B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E8AA0D17-24D8-84B6-E5E7-318F2B3ED679" name="Profil_Client_PK">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>8F0567C1-C480-DB1F-5000-9C99AB6E9C3A</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="461825BB-AB83-34B6-7C7B-1885C5F56D59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F5CE7F4-55E5-72EB-A2EA-66063C08306D" name="Profil_Client_email_UN">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>40D6D9C3-3DE9-2E72-A349-5C6C0CD3AB06</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF1466AA-C8DE-4791-E8CE-6897680E8905"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC1001DC-26FE-2082-C878-8172474216A9" name="Profil_Client_numar_telefon_UN">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>73F180DC-5E23-7BBB-EAF7-09ACC5D237DD</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9B9B73F-DF3E-AA3B-7C6C-6093384D06C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="58FFDF0F-E0F9-5323-1653-FE229D6F8A8A" name="Profil_Client__IDX">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>E0924EF0-FAC4-4163-67E2-2918273986EE</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="5F94E2D2-67D5-CCC4-A378-9CD0C70C98A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27A7F346-2881-2461-70BA-3D2A6743C771" name="Profil_Client_Client_FK">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>E0924EF0-FAC4-4163-67E2-2918273986EE</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F94E2D2-67D5-CCC4-A378-9CD0C70C98A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

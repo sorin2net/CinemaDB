@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Feedback" directorySegmentName="seg_0" id="0C324090-5F73-06F9-6C57-599E5330A1C7">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Rezervare_id_rezervare" id="1CFA3BB8-04DC-F435-8198-8DC51691A1CF">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Rating" id="460226FF-A255-48D3-458B-84A0878B4952">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_recenzie" id="ADDA56A3-CC34-EA35-B122-037F8D1B223D">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Recenzie" id="D2DCECEB-C6B6-9610-9F34-C5FE6AF26848">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_feedback" id="E10FA16F-4A03-C63F-3312-4E75A281D540">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="Feedback__IDX" id="2074AAD9-AFE3-D989-7C75-CFAD0D2F9819">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Feedback_Rezervare_FK" id="3F1904E2-8700-B002-20A0-747E263805A9">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Feedback_PK" id="B29AB46B-4FBB-7AAF-C705-7F375BF7A331">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

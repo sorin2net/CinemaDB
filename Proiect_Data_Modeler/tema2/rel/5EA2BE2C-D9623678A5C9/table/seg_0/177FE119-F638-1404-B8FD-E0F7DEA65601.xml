@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="177FE119-F638-1404-B8FD-E0F7DEA65601" name="Cinema">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>40C33A68-CCAD-AB42-5A56-608923803BDA</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cinema" id="95027154-782E-F631-EF1D-DB56AE25AF15">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>6BE74A04-3D84-6858-7A37-E7568B1A26C1</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Oras" id="6441B640-2312-0EF0-A466-EF5B86EC1C54">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>C4765F9F-3E7F-6439-97EE-DB976B708BEE</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>oras_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Oras) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>22,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Strada" id="3B7945B6-AB51-6119-B1FF-6DD46E8778E7">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>B7BB05A2-8621-E35B-38A9-7429D312C1AE</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>strada_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Strada) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefon" id="841163D5-1384-DAC9-4948-A41CA91E28AC">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>253B0EB3-F047-0943-9B81-CBEFE95D76D9</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>telefon_cinema_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Telefon, &apos;^07[0-9]{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="84C8B45E-09DA-C55D-1D46-54ACFF787C49">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>4D78C573-25E3-48B0-B16F-1EDB308676E1</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>cinema_email</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="19589309-19C1-535F-374D-6E2D3FAE7EFB" name="Cinema_PK">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>D293A364-D785-D754-0830-A52A1484B20A</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95027154-782E-F631-EF1D-DB56AE25AF15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="84A9D5CF-9C4B-3E54-6FCA-4AEC6854F8FF" name="Cinema_Telefon_UN">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>75DBCCFF-EB2E-0831-0155-1EDC9A770D27</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="841163D5-1384-DAC9-4948-A41CA91E28AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12C65E8C-69A8-9053-0531-0973833305B9" name="Cinema_Email_UN">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>6F8D6532-792F-3E12-200C-35A41A8045D6</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84C8B45E-09DA-C55D-1D46-54ACFF787C49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

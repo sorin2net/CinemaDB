@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SALA_PROIECTII" directorySegmentName="seg_0" id="E6515024-E92C-9B56-C09D-BEE75E530358">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:14:32 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<sourcePk>DF17BE74-1C77-CACB-9CB7-639032053992</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>gazduieste</nameOnSource>
+<nameOnTarget>se_difuzeaza_in</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E243A900-73CA-4DA6-BA86-B1320C824236</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>76717A2A-A098-F09B-A56B-97E57C218EA0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

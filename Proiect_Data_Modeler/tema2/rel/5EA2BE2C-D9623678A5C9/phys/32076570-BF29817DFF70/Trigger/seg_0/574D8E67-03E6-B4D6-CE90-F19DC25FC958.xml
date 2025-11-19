@@ -1,0 +1,29 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="verifica_suprapunere_proiectie" directorySegmentName="seg_0" id="574D8E67-03E6-B4D6-CE90-F19DC25FC958">
+<createdBy>Denis</createdBy>
+<createdTime>2025-11-10 09:55:33 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[DECLARE
+    v_count NUMBER;
+BEGIN
+    SELECT COUNT(*)
+    INTO v_count
+    FROM Proiectie
+    WHERE id_sala = :NEW.id_sala
+      AND Data = :NEW.Data
+      AND (
+            (TO_DATE(:NEW.ora_inceput, 'HH24:MI') BETWEEN TO_DATE(ora_inceput, 'HH24:MI') AND TO_DATE(ora_sfarsit, 'HH24:MI'))
+         OR (TO_DATE(:NEW.ora_sfarsit, 'HH24:MI') BETWEEN TO_DATE(ora_inceput, 'HH24:MI') AND TO_DATE(ora_sfarsit, 'HH24:MI'))
+         OR (TO_DATE(ora_inceput, 'HH24:MI') BETWEEN TO_DATE(:NEW.ora_inceput, 'HH24:MI') AND TO_DATE(:NEW.ora_sfarsit, 'HH24:MI'))
+          )
+      AND (:NEW.id_proiectie IS NULL OR id_proiectie <> :NEW.id_proiectie);
+
+    IF v_count > 0 THEN
+        RAISE_APPLICATION_ERROR(-20001, 'Exista deja o proiectie in aceeasi sala si zi care se suprapune ca interval orar.');
+    END IF;
+END; ]]></body>
+<triggerTime>BEFORE</triggerTime>
+<state>ENABLE</state>
+<table>E6E7D25A-E887-83B8-7C24-926CF7EE7AA1</table>
+</TriggerOraclev10g>

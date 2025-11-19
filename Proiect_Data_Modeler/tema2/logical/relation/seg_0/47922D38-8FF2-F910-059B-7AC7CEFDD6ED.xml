@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Filme_Proiectie" directorySegmentName="seg_0" id="47922D38-8FF2-F910-059B-7AC7CEFDD6ED">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-26 15:26:47 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<sourcePk>A22792EA-18F6-ED8F-7F45-557E26010D87</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>este_vazut</nameOnSource>
+<nameOnTarget>este_a</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8849D24F-F4CA-A72B-C2E1-38FE133BB303</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>76717A2A-A098-F09B-A56B-97E57C218EA0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

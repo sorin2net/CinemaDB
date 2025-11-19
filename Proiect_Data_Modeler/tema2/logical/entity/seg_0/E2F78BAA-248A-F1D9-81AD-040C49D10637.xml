@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E2F78BAA-248A-F1D9-81AD-040C49D10637" name="Client">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:33:41 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_client" id="13D250E4-FCA3-C1CC-4B34-657AD9CA64B5">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:33:59 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email" id="F32A2F07-3F99-4318-C9E2-9D2B7384BA39">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:36:39 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<constraintName>client_email_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nume" id="289E4D93-1C7C-E7EA-DE5F-5D529F0B9F5F">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:36:56 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<constraintName>nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Nume) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telefon" id="F2B356AF-995D-1831-B54A-2E96DBEC0974">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:37:40 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<constraintName>telefon_client_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Telefon, &apos;^07[0-9]{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2BD2E98A-BC0C-FDBD-2159-8D78887440D1" name="Key_1">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:34:44 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>13D250E4-FCA3-C1CC-4B34-657AD9CA64B5</newElementsIDs>
+<usedAttributes>
+<attributeRef>13D250E4-FCA3-C1CC-4B34-657AD9CA64B5</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="7CCA8966-D7B2-86FE-C257-D15B17A931E2" name="Key_2">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 13:29:23 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="false"/>
+</engineerTo>
+<newElementsIDs>F32A2F07-3F99-4318-C9E2-9D2B7384BA39</newElementsIDs>
+<usedAttributes>
+<attributeRef>F32A2F07-3F99-4318-C9E2-9D2B7384BA39</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="598E5DB9-AA37-0AB9-A6AE-D0735C2C65F8" name="Key_3">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 13:29:24 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="false"/>
+</engineerTo>
+<newElementsIDs>F2B356AF-995D-1831-B54A-2E96DBEC0974</newElementsIDs>
+<usedAttributes>
+<attributeRef>F2B356AF-995D-1831-B54A-2E96DBEC0974</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

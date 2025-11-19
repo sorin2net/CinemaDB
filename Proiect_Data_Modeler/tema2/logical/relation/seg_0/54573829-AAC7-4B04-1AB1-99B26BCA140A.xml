@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PROIECTIE_REZERVARI" directorySegmentName="seg_0" id="54573829-AAC7-4B04-1AB1-99B26BCA140A">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:14:58 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<sourcePk>190B8618-7B28-7D00-D461-E3F1B027B85B</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>este_pentru</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>76717A2A-A098-F09B-A56B-97E57C218EA0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D7428B5B-64AD-E93A-D291-04FD28A93206</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

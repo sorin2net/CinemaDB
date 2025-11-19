@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0BAF586E-AAC1-EA7B-763B-89444A4BD69E" name="Film">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>8849D24F-F4CA-A72B-C2E1-38FE133BB303</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_film" id="948F6521-BC24-6EE4-5FDE-900AF3C9DDF4">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>3201A782-1630-BB7C-E723-99D55174AD9B</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Titlu" id="8B7A98DA-901A-9C88-1161-6AF05B4090BE">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>41000DCA-FD84-FA11-D6C7-4A5C0C42DE56</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>Titlu_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Titlu) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Durata" id="9122F3DB-B258-A05E-AB33-55B16C42B2A4">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>81CCFA97-F495-DD2C-E69E-DAE1D63BAAA0</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>Durata_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<defaultValue>90</defaultValue>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>60</beginValue>
+<endValue>240</endValue>
+<description>durata in minute a filmului</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="Gen" id="CABB86DA-6C90-49AB-0A18-838D52EEDC83">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>D2334716-AE1D-3A19-138E-02ACBD047838</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>Gen_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="Actiune" description=""/>
+<valueDef value="Aventura" description=""/>
+<valueDef value="Comedie" description=""/>
+<valueDef value="Documentar" description=""/>
+<valueDef value="Drama" description=""/>
+<valueDef value="Fantasy" description=""/>
+<valueDef value="Horror" description=""/>
+<valueDef value="Romantic" description=""/>
+<valueDef value="Science-Fiction" description=""/>
+<valueDef value="Thriller" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descriere" id="7651B10D-A871-BB49-D9C6-CA35F569010D">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>FC6D7C33-AEE5-19DF-F3C8-619B846E962A</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>Descriere_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Descriere IS NULL OR length(Descriere)&gt;10"/>
+</checkConstraint>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Restrictie_varsta" id="D00D37BE-9ADC-7310-ADD1-8BFF9D56DDCC">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>A9513302-D5A2-CC12-AFB3-097E78F5D11A</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>restrictie_varsta_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<listOfValues>
+<valueDef value="12" description=""/>
+<valueDef value="15" description=""/>
+<valueDef value="18" description=""/>
+<valueDef value="3" description=""/>
+<valueDef value="7" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EF4753BA-80E3-8340-C4D3-8079A8DC3180" name="Film_PK">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>A22792EA-18F6-ED8F-7F45-557E26010D87</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="948F6521-BC24-6EE4-5FDE-900AF3C9DDF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29F3D452-BF05-3954-C2FC-AB568FA6291C" name="Film_Titlu_UN">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>6DD87622-FE84-04F8-1320-B9A04E716723</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B7A98DA-901A-9C88-1161-6AF05B4090BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

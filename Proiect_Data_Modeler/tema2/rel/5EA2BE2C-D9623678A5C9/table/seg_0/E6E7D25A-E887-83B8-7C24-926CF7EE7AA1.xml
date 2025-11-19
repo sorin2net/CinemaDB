@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E6E7D25A-E887-83B8-7C24-926CF7EE7AA1" name="Proiectie">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>76717A2A-A098-F09B-A56B-97E57C218EA0</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_proiectie" id="C129BECC-1938-336C-8615-404808AE3120">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>A30C1C9A-82DF-E72D-A029-9B7BA195406C</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data" id="C78B1C3C-A113-B1DC-2D51-2CEBA1EF3242">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>4A380B8D-64B0-2560-094C-DB826BAD5BF9</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ora_inceput" id="19846DF9-8D0B-8431-B0CA-D9E8844052D3">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>9C29E920-E47D-2DBB-3401-F15031055A4C</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>ora_inceput_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<listOfValues>
+<valueDef value="10:00" description=""/>
+<valueDef value="11:00" description=""/>
+<valueDef value="12:00" description=""/>
+<valueDef value="13:00" description=""/>
+<valueDef value="14:00" description=""/>
+<valueDef value="15:00" description=""/>
+<valueDef value="16:00" description=""/>
+<valueDef value="17:00" description=""/>
+<valueDef value="18:00" description=""/>
+<valueDef value="19:00" description=""/>
+<valueDef value="20:00" description=""/>
+<valueDef value="21:00" description=""/>
+<valueDef value="8:00" description=""/>
+<valueDef value="9:00" description=""/>
+</listOfValues>
+<defaultValue>12:00</defaultValue>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ora_sfarsit" id="889F8EFB-11F6-6328-56AC-1564BB28EE69">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>86FCDA1A-B00A-7A94-B113-19CF84C4F90E</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>ora_sfarsit_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<listOfValues>
+<valueDef value="10:00" description=""/>
+<valueDef value="11:00" description=""/>
+<valueDef value="12:00" description=""/>
+<valueDef value="13:00" description=""/>
+<valueDef value="14:00" description=""/>
+<valueDef value="15:00" description=""/>
+<valueDef value="16:00" description=""/>
+<valueDef value="17:00" description=""/>
+<valueDef value="18:00" description=""/>
+<valueDef value="19:00" description=""/>
+<valueDef value="20:00" description=""/>
+<valueDef value="21:00" description=""/>
+<valueDef value="22:00" description=""/>
+<valueDef value="23:00" description=""/>
+<valueDef value="9:00" description=""/>
+</listOfValues>
+<defaultValue>14:00</defaultValue>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_film" id="FEFFB43F-663A-18D5-2CD4-6A1CCD6BA19D">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>1B236445-4D7A-28E0-CD25-AFD0643CD03E</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19467A5E-7520-4BCC-AE95-B9F840BE762F" referredColumn="948F6521-BC24-6EE4-5FDE-900AF3C9DDF4"/>
+</associations>
+</Column>
+<Column name="id_sala" id="CBF8F344-6B92-BC4A-2CF0-4AC142454066">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>90DBA198-76FD-F312-8EFD-EC9F654C980B</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="480E2939-FC56-3F8D-684E-8CAAD6899192" referredColumn="42454B20-6781-9616-0032-9B7CAE4EB0FD"/>
+</associations>
+</Column>
+<Column name="tip_proiectie" id="E348DA55-DE82-6F1F-8384-B53D9AD60FE3">
+<createdBy>Denis</createdBy>
+<createdTime>2025-11-17 21:31:31 UTC</createdTime>
+<generatorID>A2E767DF-2184-682E-597B-A7692782DE01</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>tip_proiectie_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<listOfValues>
+<valueDef value="2D" description=""/>
+<valueDef value="3D" description=""/>
+<valueDef value="4DX" description=""/>
+<valueDef value="IMAX" description=""/>
+</listOfValues>
+<defaultValue>3D</defaultValue>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D2F104A-85C3-23CA-4015-429B8C60602B" name="Proiectie_PK">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>190B8618-7B28-7D00-D461-E3F1B027B85B</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C129BECC-1938-336C-8615-404808AE3120"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DDCD694D-B6BE-7478-CA27-BF2D900EBA29" name="Proiectie_Film_FK">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>47922D38-8FF2-F910-059B-7AC7CEFDD6ED</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEFFB43F-663A-18D5-2CD4-6A1CCD6BA19D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="485B3281-71EA-27D2-6BFC-81DD609436B9" name="Proiectie_Sala_FK">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>E6515024-E92C-9B56-C09D-BEE75E530358</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CBF8F344-6B92-BC4A-2CF0-4AC142454066"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

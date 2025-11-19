@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CINEMA_SALA" directorySegmentName="seg_0" id="5A6DB533-2E17-A53F-BFC5-D168B319FD77">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:13:50 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<sourcePk>D293A364-D785-D754-0830-A52A1484B20A</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>apartine</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>40C33A68-CCAD-AB42-5A56-608923803BDA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E243A900-73CA-4DA6-BA86-B1320C824236</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

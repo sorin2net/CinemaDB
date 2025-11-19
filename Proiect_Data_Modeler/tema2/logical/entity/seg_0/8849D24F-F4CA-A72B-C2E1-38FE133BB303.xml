@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8849D24F-F4CA-A72B-C2E1-38FE133BB303" name="Film">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:14:54 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_film" id="3201A782-1630-BB7C-E723-99D55174AD9B">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:15:49 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Titlu" id="41000DCA-FD84-FA11-D6C7-4A5C0C42DE56">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:17:20 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<constraintName>Titlu_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Titlu) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Durata" id="81CCFA97-F495-DD2C-E69E-DAE1D63BAAA0">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:20:01 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<constraintName>Durata_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<defaultValue>90</defaultValue>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>60</beginValue>
+<endValue>240</endValue>
+<description>durata in minute a filmului</description>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="Gen" id="D2334716-AE1D-3A19-138E-02ACBD047838">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:22:00 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<constraintName>Gen_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="Actiune" description=""/>
+<valueDef value="Aventura" description=""/>
+<valueDef value="Comedie" description=""/>
+<valueDef value="Documentar" description=""/>
+<valueDef value="Drama" description=""/>
+<valueDef value="Fantasy" description=""/>
+<valueDef value="Horror" description=""/>
+<valueDef value="Romantic" description=""/>
+<valueDef value="Science-Fiction" description=""/>
+<valueDef value="Thriller" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descriere" id="FC6D7C33-AEE5-19DF-F3C8-619B846E962A">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:23:03 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<constraintName>Descriere_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Descriere IS NULL OR length(Descriere)&gt;10"/>
+</checkConstraint>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Restrictie_varsta" id="A9513302-D5A2-CC12-AFB3-097E78F5D11A">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:23:46 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<constraintName>restrictie_varsta_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<listOfValues>
+<valueDef value="12" description=""/>
+<valueDef value="15" description=""/>
+<valueDef value="18" description=""/>
+<valueDef value="3" description=""/>
+<valueDef value="7" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A22792EA-18F6-ED8F-7F45-557E26010D87" name="Key_1">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:16:44 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>3201A782-1630-BB7C-E723-99D55174AD9B</newElementsIDs>
+<usedAttributes>
+<attributeRef>3201A782-1630-BB7C-E723-99D55174AD9B</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="6DD87622-FE84-04F8-1320-B9A04E716723" name="Key_2">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 13:29:05 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="false"/>
+</engineerTo>
+<newElementsIDs>41000DCA-FD84-FA11-D6C7-4A5C0C42DE56</newElementsIDs>
+<usedAttributes>
+<attributeRef>41000DCA-FD84-FA11-D6C7-4A5C0C42DE56</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0C324090-5F73-06F9-6C57-599E5330A1C7" name="Feedback">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>7ECF35C4-A934-9334-1AAF-0457D55D8635</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_feedback" id="E10FA16F-4A03-C63F-3312-4E75A281D540">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>EB1B3A6E-47BE-6D22-BBA8-8C2F86E8AB1F</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,,8</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Recenzie" id="D2DCECEB-C6B6-9610-9F34-C5FE6AF26848">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>F1D02422-34CA-A7EA-15B4-B63D7C935A6F</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>Recenzie_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Recenzie)&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_recenzie" id="ADDA56A3-CC34-EA35-B122-037F8D1B223D">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>2F4A4B01-4929-CCE9-7DF6-3968D0F21966</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rating" id="460226FF-A255-48D3-458B-84A0878B4952">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>E1CB5342-CBFA-87C6-8598-7706B3D73FF6</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>Rating_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>10</endValue>
+<description>clientii pot lasa rating la filme in intervalul [1-10]</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="id_rezervare" id="1CFA3BB8-04DC-F435-8198-8DC51691A1CF">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>44DC2DDA-7909-C92D-C9FC-AF483011C3A3</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77A9CC68-3864-1D8B-0F25-F7E8EE4041B0" referredColumn="17ECF508-450A-4E1E-7722-ECF5A9BAD377"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B29AB46B-4FBB-7AAF-C705-7F375BF7A331" name="Feedback_PK">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>FD3167B8-9700-5F41-DB05-C2C6FB0563AF</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E10FA16F-4A03-C63F-3312-4E75A281D540"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2074AAD9-AFE3-D989-7C75-CFAD0D2F9819" name="Feedback__IDX">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>D1009CC5-3D1C-9F38-32CE-2005AC2EC9A9</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="1CFA3BB8-04DC-F435-8198-8DC51691A1CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F1904E2-8700-B002-20A0-747E263805A9" name="Feedback_Rezervare_FK">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>D1009CC5-3D1C-9F38-32CE-2005AC2EC9A9</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CFA3BB8-04DC-F435-8198-8DC51691A1CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

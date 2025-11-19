@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Profil_Client" directorySegmentName="seg_0" id="368711DA-A41B-2FEB-01DE-F135C57324F8">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="data_nasterii" id="21ABA2AA-81E2-81D7-6439-3502743A1F36">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="prenume" id="43C50380-DC9E-E0CF-FDAF-6C6900AF554D">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_profil" id="461825BB-AB83-34B6-7C7B-1885C5F56D59">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Client_id_client" id="5F94E2D2-67D5-CCC4-A378-9CD0C70C98A5">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="adresa" id="7443F2BB-1608-1476-8960-2710C2D48401">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nume" id="807B4DE8-7AF5-30D0-7E73-D6882CF1E57E">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="parola" id="E38A84A3-6657-014E-4258-D59A52E11945">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="numar_telefon" id="E9B9B73F-DF3E-AA3B-7C6C-6093384D06C2">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="email" id="EF1466AA-C8DE-4791-E8CE-6897680E8905">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="Profil_Client__IDX" id="58FFDF0F-E0F9-5323-1653-FE229D6F8A8A">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Profil_Client_Client_FK" id="27A7F346-2881-2461-70BA-3D2A6743C771">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Profil_Client_PK" id="E8AA0D17-24D8-84B6-E5E7-318F2B3ED679">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Profil_Client_email_UN" id="1F5CE7F4-55E5-72EB-A2EA-66063C08306D">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Profil_Client_numar_telefon_UN" id="CC1001DC-26FE-2082-C878-8172474216A9">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

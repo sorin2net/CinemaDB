@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D708D94-5FCB-B018-AA4C-65E4C68A7423" name="Client">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>E2F78BAA-248A-F1D9-81AD-040C49D10637</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_client" id="180B176E-5034-E6E2-C4A4-9BE8B8987F3B">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>13D250E4-FCA3-C1CC-4B34-657AD9CA64B5</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="C42AFFFB-E655-7105-EDB2-C1646CF839A1">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>F32A2F07-3F99-4318-C9E2-9D2B7384BA39</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>client_email_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nume" id="0AD9C941-2275-163B-0E5F-CA13C2BD0A86">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>289E4D93-1C7C-E7EA-DE5F-5D529F0B9F5F</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Nume) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefon" id="C23636C9-C368-F61D-4B1B-AA2ACA3BC8A0">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>F2B356AF-995D-1831-B54A-2E96DBEC0974</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>telefon_client_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Telefon, &apos;^07[0-9]{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5B6E723D-71BB-01BE-8386-66FA034C550C" name="Client_PK">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>2BD2E98A-BC0C-FDBD-2159-8D78887440D1</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="180B176E-5034-E6E2-C4A4-9BE8B8987F3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D1AC1C5-4165-2330-AE19-B5C5D1D78774" name="Client_Email_UN">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>7CCA8966-D7B2-86FE-C257-D15B17A931E2</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C42AFFFB-E655-7105-EDB2-C1646CF839A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5C6C89C-8675-1782-2022-4AE4918879A1" name="Client_Telefon_UN">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>598E5DB9-AA37-0AB9-A6AE-D0735C2C65F8</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C23636C9-C368-F61D-4B1B-AA2ACA3BC8A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

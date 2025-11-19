@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CLIENT_REZERVARI" directorySegmentName="seg_0" id="2D35EC5B-6FD1-A0D5-F6F2-8B923454BC1B">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:15:18 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<sourcePk>2BD2E98A-BC0C-FDBD-2159-8D78887440D1</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>face_o</nameOnSource>
+<nameOnTarget>este_a</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E2F78BAA-248A-F1D9-81AD-040C49D10637</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D7428B5B-64AD-E93A-D291-04FD28A93206</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

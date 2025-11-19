@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D7428B5B-64AD-E93A-D291-04FD28A93206" name="Rezervare">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:38:28 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_rezervare" id="4B976363-DF69-DD62-EE8A-D0B90BA8CD5E">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:38:36 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numar_locuri" id="9C806FB1-D893-0640-2D53-BCF93B512DD6">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:39:05 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<constraintName>numar_locuri_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="numar_locuri&gt;0"/>
+</checkConstraint>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="locuri_rezervate" id="0E229478-DC91-C1C8-B0AB-756C7B8B4694">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:39:20 UTC</createdTime>
+<comment><![CDATA[Formatul rezervarii sa fie de genul: R1-C1 (randul 1 coloane 1,locurile rezervate fiind separate prin virgula)]]></comment>
+<commentInRDBMS><![CDATA[Formatul rezervarii sa fie de genul: R1-C1 (randul 1 coloana 1)]]></commentInRDBMS>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<constraintName>locuri_rez_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(locuri_rezervate, &apos;^R[0-9]+-C[0-9]+$&apos;) "/>
+</checkConstraint>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_rez" id="0926548A-0B2F-C6D4-53D4-A6D070C83E3D">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:40:14 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_rezervare" id="F75C0787-D93B-F11F-F5F3-623153A07741">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:40:42 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<constraintName>rezervare_status_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="ACHITAT" description=""/>
+<valueDef value="REZERVAT" description=""/>
+</listOfValues>
+<defaultValue>REZERVAT</defaultValue>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_proiectie" id="4D040C55-A380-BC79-3C16-00E46C1EBB3C">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:14:58 UTC</createdTime>
+<generatorID>54573829-AAC7-4B04-1AB1-99B26BCA140A</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<referedAttribute>A30C1C9A-82DF-E72D-A029-9B7BA195406C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_client" id="E3919238-F243-9060-E415-A9B7C3C28726">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:15:18 UTC</createdTime>
+<generatorID>2D35EC5B-6FD1-A0D5-F6F2-8B923454BC1B</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<referedAttribute>13D250E4-FCA3-C1CC-4B34-657AD9CA64B5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="38BB73B1-CE60-368C-BEBF-555BCEEFF73A" name="Key_1">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:38:55 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>4B976363-DF69-DD62-EE8A-D0B90BA8CD5E</newElementsIDs>
+<usedAttributes>
+<attributeRef>4B976363-DF69-DD62-EE8A-D0B90BA8CD5E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

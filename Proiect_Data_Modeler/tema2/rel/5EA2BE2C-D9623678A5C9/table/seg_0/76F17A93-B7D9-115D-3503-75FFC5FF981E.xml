@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="76F17A93-B7D9-115D-3503-75FFC5FF981E" name="Rezervare">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>D7428B5B-64AD-E93A-D291-04FD28A93206</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_rezervare" id="17ECF508-450A-4E1E-7722-ECF5A9BAD377">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>4B976363-DF69-DD62-EE8A-D0B90BA8CD5E</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numar_locuri" id="9259394D-C6CD-AF39-3590-FFE24F56286E">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>9C806FB1-D893-0640-2D53-BCF93B512DD6</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>numar_locuri_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="numar_locuri&gt;0"/>
+</checkConstraint>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="locuri_rezervate" id="77581790-44AF-AED8-EFB7-3F5726FAD81D">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<comment><![CDATA[Formatul rezervarii sa fie de genul: R1-C1 (randul 1 coloane 1,locurile rezervate fiind separate prin virgula)]]></comment>
+<commentInRDBMS><![CDATA[Formatul rezervarii sa fie de genul: R1-C1 (randul 1 coloana 1)]]></commentInRDBMS>
+<generatorID>0E229478-DC91-C1C8-B0AB-756C7B8B4694</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>locuri_rez_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(locuri_rezervate, &apos;^R[0-9]+-C[0-9]+$&apos;) "/>
+</checkConstraint>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_rez" id="AC3D486D-78B8-06B4-1CC0-A57EA238A9E7">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>0926548A-0B2F-C6D4-53D4-A6D070C83E3D</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_rezervare" id="275859D4-59E2-829D-E46A-D11C8005FD39">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>F75C0787-D93B-F11F-F5F3-623153A07741</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<constraintName>rezervare_status_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="ACHITAT" description=""/>
+<valueDef value="REZERVAT" description=""/>
+</listOfValues>
+<defaultValue>REZERVAT</defaultValue>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_proiectie" id="9447C67A-5A54-382B-E361-74CC49716F04">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>4D040C55-A380-BC79-3C16-00E46C1EBB3C</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5CF7AE8B-C999-8965-95F4-AD6C9894FB3C" referredColumn="C129BECC-1938-336C-8615-404808AE3120"/>
+</associations>
+</Column>
+<Column name="id_client" id="3B353CB3-5E33-188A-61F3-9716A4012498">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>E3919238-F243-9060-E415-A9B7C3C28726</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="90E56D98-6761-1EE5-AABD-A8D4BE442A12" referredColumn="180B176E-5034-E6E2-C4A4-9BE8B8987F3B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B4D9BB3-D474-3D81-E4C3-D07AC2FB4BDE" name="Rezervare_PK">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>38BB73B1-CE60-368C-BEBF-555BCEEFF73A</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17ECF508-450A-4E1E-7722-ECF5A9BAD377"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D9CDCCC-E9F2-DA28-193A-81EF5A05FA72" name="Rezervare_Client_FK">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>2D35EC5B-6FD1-A0D5-F6F2-8B923454BC1B</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B353CB3-5E33-188A-61F3-9716A4012498"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9DE9C4F-1759-B522-2F87-DFB31CFAB286" name="Rezervare_Proiectie_FK">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:41:10 UTC</createdTime>
+<generatorID>54573829-AAC7-4B04-1AB1-99B26BCA140A</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9447C67A-5A54-382B-E361-74CC49716F04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

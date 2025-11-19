@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7ECF35C4-A934-9334-1AAF-0457D55D8635" name="Feedback">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:41:56 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_feedback" id="EB1B3A6E-47BE-6D22-BBA8-8C2F86E8AB1F">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:42:06 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,,8</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Recenzie" id="F1D02422-34CA-A7EA-15B4-B63D7C935A6F">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:42:53 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<constraintName>Recenzie_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Recenzie)&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_recenzie" id="2F4A4B01-4929-CCE9-7DF6-3968D0F21966">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:43:17 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Rating" id="E1CB5342-CBFA-87C6-8598-7706B3D73FF6">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:43:39 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<constraintName>Rating_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>10</endValue>
+<description>clientii pot lasa rating la filme in intervalul [1-10]</description>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="id_rezervare" id="44DC2DDA-7909-C92D-C9FC-AF483011C3A3">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-27 17:19:50 UTC</createdTime>
+<generatorID>D1009CC5-3D1C-9F38-32CE-2005AC2EC9A9</generatorID>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<referedAttribute>4B976363-DF69-DD62-EE8A-D0B90BA8CD5E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FD3167B8-9700-5F41-DB05-C2C6FB0563AF" name="Key_1">
+<createdBy>Denis</createdBy>
+<createdTime>2025-10-20 12:42:40 UTC</createdTime>
+<ownerDesignName>tema2</ownerDesignName>
+<engineerTo>
+<item key="5EA2BE2C-D737-D260-F4D6-D9623678A5C9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>EB1B3A6E-47BE-6D22-BBA8-8C2F86E8AB1F</newElementsIDs>
+<usedAttributes>
+<attributeRef>EB1B3A6E-47BE-6D22-BBA8-8C2F86E8AB1F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
