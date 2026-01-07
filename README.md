@@ -9,10 +9,10 @@ Proiectul a fost dezvoltat utilizând **Oracle SQL Developer Data Modeler** pent
 ## 🖼️ Schemele Proiectului
 
 ### Modelul Logic
-<img src="image_9525ca.png" width="800">
+<img src="Diagrame_png/Logical.png" width="800">
 
 ### Modelul Relațional
-<img src="image_952607.png" width="800">
+<img src="Diagrame_png/Relational_1.png" width="800">
 
 ---
 
