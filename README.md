@@ -71,8 +71,7 @@ Sistemul include logică de business avansată implementată direct la nivelul b
 
 ## 🧑‍💻 Autor
 
-* **Student:** Dumitriu Denis-Gabriel, Grupa 1311A.
-* **Coordonator:** Mironeanu Catalin.
+* **Student:** Dumitriu Denis-Gabriel
 
 ---
 
